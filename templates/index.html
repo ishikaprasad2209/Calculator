@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="calculator">
-        <h1>Online Calculator</h1>
+        <h1>Calculator</h1>
         <form action="/calculate" method="post">
             <div class="display">
                 <input type="text" name="expression" id="expression" placeholder="0" readonly>
@@ -17,20 +17,20 @@
                 <button type="button" onclick="appendValue('7')">7</button>
                 <button type="button" onclick="appendValue('8')">8</button>
                 <button type="button" onclick="appendValue('9')">9</button>
-                <button type="button" onclick="appendValue('+')">+</button>
+                <button type="button" class="operator" onclick="appendValue('+')">+</button>
                 <button type="button" onclick="appendValue('4')">4</button>
                 <button type="button" onclick="appendValue('5')">5</button>
                 <button type="button" onclick="appendValue('6')">6</button>
-                <button type="button" onclick="appendValue('-')">-</button>
+                <button type="button" class="operator" onclick="appendValue('-')">-</button>
                 <button type="button" onclick="appendValue('1')">1</button>
                 <button type="button" onclick="appendValue('2')">2</button>
                 <button type="button" onclick="appendValue('3')">3</button>
-                <button type="button" onclick="appendValue('*')">*</button>
+                <button type="button" class="operator" onclick="appendValue('*')">*</button>
                 <button type="button" onclick="appendValue('0')">0</button>
                 <button type="button" onclick="appendValue('.')">.</button>
-                <button type="submit">CALCULATE</button>
-                <button type="button" onclick="appendValue('/')">/</button>
                 <button type="button" onclick="clearDisplay()">C</button>
+                <button type="button" class="operator" onclick="appendValue('/')">/</button>
+                <button type="submit" class="calculate">CALCULATE</button>
             </div>
         </form>
     </div>
